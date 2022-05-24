@@ -26,7 +26,7 @@ const cognomi = [
 
 executeButton.addEventListener("click", function () {
   document.getElementById("list").innerHTML = "";
-  for (i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     document.getElementById("list").innerHTML += `<li>${
       nomi[Math.floor(Math.random() * nomi.length)]
     } ${cognomi[Math.floor(Math.random() * cognomi.length)]}</li>`;
